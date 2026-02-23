@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elisabeth Novy Photography</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a class="nav-logo" href="index.html">Elisabeth Novy</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Arbeiten</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">Über mich</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- HERO SLIDESHOW -->
+    <section class="hero">
+      <div class="hero-title-block">
+        <h1 class="hero-title">Elisabeth<br>Novy</h1>
+      </div>
+
+      <div class="hero-image-full">
+        <!--
+          HERO SLIDESHOW – 6 images that cycle automatically.
+          Works with BOTH portrait (vertical) and landscape photos.
+          The center of each image is always shown — no important parts get cut off.
+
+          Replace the src values below with your chosen hero images.
+          Examples:
+            src="images/hero-01.jpg"
+            src="images/hero-02.jpg"
+            ... up to hero-06.jpg
+
+          TIP: Pick your 6 most striking photos for this slot.
+          They can be any orientation — the slideshow handles it.
+        -->
+        <div class="slideshow">
+          <div class="slide active" style="background-image: url('images/hero-01.jpg')"></div>
+          <div class="slide" style="background-image: url('images/hero-02.jpg')"></div>
+          <div class="slide" style="background-image: url('images/hero-03.jpg')"></div>
+          <div class="slide" style="background-image: url('images/hero-04.jpg')"></div>
+          <div class="slide" style="background-image: url('images/hero-05.jpg')"></div>
+          <div class="slide" style="background-image: url('images/hero-06.jpg')"></div>
+        </div>
+
+        <!-- Dot indicators -->
+        <div class="slide-dots">
+          <button class="dot active" onclick="goToSlide(0)" aria-label="Bild 1"></button>
+          <button class="dot" onclick="goToSlide(1)" aria-label="Bild 2"></button>
+          <button class="dot" onclick="goToSlide(2)" aria-label="Bild 3"></button>
+          <button class="dot" onclick="goToSlide(3)" aria-label="Bild 4"></button>
+          <button class="dot" onclick="goToSlide(4)" aria-label="Bild 5"></button>
+          <button class="dot" onclick="goToSlide(5)" aria-label="Bild 6"></button>
+        </div>
+
+        <p class="hero-tagline">Photography &amp; Art · Vienna</p>
+      </div>
+    </section>
+
+    <!-- SELECTED WORKS -->
+    <section>
+      <div class="section-header fade-up">
+        <h2 class="section-title">Ausgewählte<br>Arbeiten</h2>
+        <!-- Optionally link to a full gallery page if you create one -->
+      </div>
+
+      <!--
+        PHOTO GRID – 6 featured works
+        Each photo-item contains one image and an optional caption.
+        Replace src="..." with your own image paths, e.g. src="images/work-01.jpg"
+        The grid shows 3 columns on desktop, 1 on mobile.
+        Aspect ratio is 3:4 by default (portrait). Adjust in style.css if needed.
+      -->
+      <div class="photo-grid">
+
+        <!-- Work 1 -->
+        <div class="photo-item fade-up">
+          <img src="images/work-01.jpg" alt="Work 1" />
+          <!-- PLACEHOLDER: Category or series title -->
+          <p class="photo-caption">Porträt</p>
+        </div>
+
+        <!-- Work 2 -->
+        <div class="photo-item fade-up">
+          <img src="images/work-02.jpg" alt="Work 2" />
+          <p class="photo-caption">Editorial</p>
+        </div>
+
+        <!-- Work 3 -->
+        <div class="photo-item fade-up">
+          <img src="images/work-03.jpg" alt="Work 3" />
+          <p class="photo-caption">Kunst</p>
+        </div>
+
+        <!-- Work 4 -->
+        <div class="photo-item fade-up">
+          <img src="images/work-04.jpg" alt="Work 4" />
+          <p class="photo-caption">Natürliches Licht</p>
+        </div>
+
+        <!-- Work 5 -->
+        <div class="photo-item fade-up">
+          <img src="images/work-05.jpg" alt="Work 5" />
+          <p class="photo-caption">Umgebung</p>
+        </div>
+
+        <!-- Work 6 -->
+        <div class="photo-item fade-up">
+          <img src="images/work-06.jpg" alt="Work 6" />
+          <p class="photo-caption">Übermalte Fotografie</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ARTIST STATEMENT – full-width quote with background image -->
+    <section class="quote-band fade-up">
+      <!--
+        QUOTE BACKGROUND IMAGE
+        Replace src below with a dramatic, full-bleed photo (landscape preferred).
+        Example: src="images/quote-bg.jpg"
+      -->
+      <img class="quote-band-bg" src="images/quote-bg.jpg" alt="" aria-hidden="true" />
+      <!--
+        ARTIST STATEMENT
+        Replace this text with Elisabeth's own words.
+        Keep it short and powerful – one or two sentences.
+      -->
+      <p class="quote-text">
+        „Mit meinen Bildern möchte ich die Identität, den Ausdruck<br>
+        und die Aura von Menschen einfangen."
+      </p>
+    </section>
+
+    <!-- SECOND ROW – More Works -->
+    <section>
+      <div class="section-header fade-up">
+        <h2 class="section-title">Übermalte<br>Fotografie</h2>
+        <a href="about.html" class="section-link">Über die Kunst</a>
+      </div>
+
+      <!--
+        ART / PAINTED PHOTOGRAPHY GRID – 3 images showcasing the painted-over photos
+        These should highlight the unique artistic medium: photo + painting combined.
+        Replace src="..." with your painted-photo series images.
+      -->
+      <div class="photo-grid fade-up">
+
+        <div class="photo-item">
+          <img src="images/art-01.jpg" alt="Übermalte Fotografie 1" />
+          <p class="photo-caption">Serie I</p>
+        </div>
+
+        <div class="photo-item">
+          <img src="images/art-02.jpg" alt="Übermalte Fotografie 2" />
+          <p class="photo-caption">Serie II</p>
+        </div>
+
+        <div class="photo-item">
+          <img src="images/art-03.jpg" alt="Übermalte Fotografie 3" />
+          <p class="photo-caption">Serie III</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <p class="footer-logo">Elisabeth Novy</p>
+      <p class="footer-sub">Photography &amp; Art · Vienna, Austria</p>
+    </div>
+    <ul class="footer-nav">
+      <li><a href="index.html">Arbeiten</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">Über mich</a></li>
+    </ul>
+    <div class="footer-bottom">
+      <!-- PLACEHOLDER: Replace with your email or social links -->
+      <span><!-- e.g. hello@elisabethnovy.com --></span>
+      <span>© 2025 Elisabeth Novy</span>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    // Scroll-triggered fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 100);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // ── HERO SLIDESHOW ──
+    const slides = document.querySelectorAll('.slide');
+    const dots   = document.querySelectorAll('.dot');
+    let current  = 0;
+    let timer;
+
+    function goToSlide(n) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+      resetTimer();
+    }
+
+    function nextSlide() { goToSlide(current + 1); }
+
+    function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(nextSlide, 5000);
+    }
+
+    // Start auto-advance
+    timer = setInterval(nextSlide, 5000);
+  </script>
+
+</body>
+</html>
