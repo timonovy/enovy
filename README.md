@@ -1,5 +1,20 @@
-# enovy
-Elisabeth Novy Website
+# Elisabeth Novy Photography – Website
+
+A clean, editorial photography portfolio website. Built with pure HTML/CSS/JavaScript — ready for free hosting on **GitHub Pages**.
+
+---
+
+## File Structure
+
+```
+/
+├── index.html        ← Works / Home page
+├── services.html     ← Services page
+├── about.html        ← About me + Contact page
+├── style.css         ← All shared styles
+└── images/           ← ⚠️ CREATE THIS FOLDER and add your photos here
+```
+
 ---
 
 ## How to Add Your Photos
