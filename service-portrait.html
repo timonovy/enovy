@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portrait – Elisabeth Novy Photography</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">Elisabeth Novy</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#about">Über mich</a></li>
+      <li><a href="index.html#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- SERVICE HERO – large image with title overlay -->
+    <section class="svc-hero">
+      <!--
+        Replace src with the best single photo for this service.
+        This is the full-width banner at the top of the page.
+        Example: src="images/Jan-Kruch-Geschäftsführer-min.jpg"
+      -->
+      <div class="svc-hero-img" style="background-image: url('images/Jan-Kruch-Geschäftsführer-min.jpg')"></div>
+      <div class="svc-hero-overlay">
+        <a class="svc-back" href="index.html#portfolio">← Portfolio</a>
+        <h1 class="svc-hero-title">Portrait</h1>
+        <p class="svc-hero-sub">Porträtfotografie · Wien</p>
+      </div>
+    </section>
+
+    <!-- SERVICE DESCRIPTION -->
+    <section class="svc-desc-section fade-up">
+      <div class="svc-desc-text">
+        <!-- PLACEHOLDER: Replace with your own text for this service. -->
+        <p>Authentische Porträts, die den Menschen in seiner Tiefe zeigen. Kein Posieren – nur du, wie du wirklich bist. Beschreibe deinen Ansatz: Wo machst du Porträts? Wie läuft ein Shooting ab?</p>
+      </div>
+      <div class="svc-desc-meta">
+        <!-- PLACEHOLDER: Optional pricing, duration, or booking info. Example: -->
+        <div class="svc-meta-block">
+          <span class="contact-label">Anfrage</span>
+          <!-- Replace with real email -->
+          <a class="svc-meta-link" href="index.html#contact">Kontakt aufnehmen</a>
+        </div>
+        <div class="svc-meta-block">
+          <span class="contact-label">Standort</span>
+          <span>Wien &amp; Umgebung</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTO GALLERY – show more work for this service -->
+    <section class="svc-gallery fade-up">
+      <!--
+        Replace the src values below with your photos for this service.
+        Add or remove photo-item blocks as needed.
+        All orientations (portrait/landscape) work — the grid crops to center.
+      -->
+      <div class="svc-gallery-grid">
+
+        <div class="svc-gallery-item">
+          <img src="images/Jan-Kruch-Geschäftsführer-min.jpg" alt="Portrait 1" />
+        </div>
+        <div class="svc-gallery-item">
+          <img src="images/portrait-02.jpg" alt="Portrait 2" />
+        </div>
+        <div class="svc-gallery-item">
+          <img src="images/portrait-03.jpg" alt="Portrait 3" />
+        </div>
+        <div class="svc-gallery-item">
+          <img src="images/portrait-04.jpg" alt="Portrait 4" />
+        </div>
+        <div class="svc-gallery-item">
+          <img src="images/portrait-05.jpg" alt="Portrait 5" />
+        </div>
+        <div class="svc-gallery-item">
+          <img src="images/portrait-06.jpg" alt="Portrait 6" />
+        </div>
+
+        <!--
+          ADD MORE PHOTOS: copy and paste this block for each additional photo:
+
+          <div class="svc-gallery-item">
+            <img src="images/YOUR-PHOTO.jpg" alt="Portrait" />
+          </div>
+        -->
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="quote-band fade-up" style="padding: 80px 48px;">
+      <p class="quote-text" style="font-size: clamp(22px, 3.5vw, 42px);">
+        Neugierig? Ich freue mich auf deine Nachricht.
+      </p>
+      <a href="index.html#contact" class="cta-btn">Kontakt aufnehmen</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <p class="footer-logo">Elisabeth Novy</p>
+      <p class="footer-sub">Photography &amp; Art · Vienna, Austria</p>
+    </div>
+    <ul class="footer-nav">
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#about">Über mich</a></li>
+      <li><a href="index.html#contact">Kontakt</a></li>
+    </ul>
+    <div class="footer-bottom">
+      <span><!-- hello@elisabethnovy.com --></span>
+      <span>© 2025 Elisabeth Novy</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

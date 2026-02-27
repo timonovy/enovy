@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elisabeth Novy Photography</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">Elisabeth Novy</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- ══════════════════════════
+         HERO SLIDESHOW
+    ══════════════════════════ -->
+    <section class="hero">
+      <div class="hero-title-block">
+        <h1 class="hero-title">Elisabeth<br>Novy</h1>
+      </div>
+      <div class="hero-image-full">
+        <div class="slideshow" id="hero-show">
+          <!-- Replace these 6 filenames with your chosen hero images -->
+          <div class="slide active" style="background-image: url('images/DSC4511-min.jpg')"></div>
+          <div class="slide" style="background-image: url('images/DSC3820-min.jpg')"></div>
+          <div class="slide" style="background-image: url('images/DSC_1596-2-2-min.jpg')"></div>
+          <div class="slide" style="background-image: url('images/DSC2990-Edit-Edit-min.jpg')"></div>
+          <div class="slide" style="background-image: url('images/DSC0176.jpg')"></div>
+          <div class="slide" style="background-image: url('images/19680030.jpg')"></div>
+        </div>
+        <div class="slide-dots" id="hero-dots">
+          <button class="dot active" aria-label="Bild 1"></button>
+          <button class="dot" aria-label="Bild 2"></button>
+          <button class="dot" aria-label="Bild 3"></button>
+          <button class="dot" aria-label="Bild 4"></button>
+          <button class="dot" aria-label="Bild 5"></button>
+          <button class="dot" aria-label="Bild 6"></button>
+        </div>
+        <p class="hero-tagline">Photography &amp; Art · Vienna</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════
+         PORTFOLIO GRID
+         Each card links to its own service page
+    ══════════════════════════ -->
+    <section id="portfolio">
+      <div class="section-header fade-up">
+        <h2 class="section-title">Portfolio</h2>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <!-- CARD 1: Wedding — links to service-wedding.html -->
+        <a class="portfolio-card fade-up" href="service-wedding.html">
+          <div class="pcard-slideshow">
+            <!-- Replace with your 5 wedding photos -->
+            <div class="pslide active" style="background-image: url('images/DSC0100.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/wedding-02.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/wedding-03.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/wedding-04.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/wedding-05.jpg')"></div>
+          </div>
+          <div class="pcard-dots"></div>
+          <div class="pcard-label">
+            <span class="pcard-title">Wedding</span>
+            <span class="pcard-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- CARD 2: Portrait — links to service-portrait.html -->
+        <a class="portfolio-card fade-up" href="service-portrait.html">
+          <div class="pcard-slideshow">
+            <!-- Replace with your 5 portrait photos -->
+            <div class="pslide active" style="background-image: url('images/Jan-Kruch-Geschäftsführer-min.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/portrait-02.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/portrait-03.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/portrait-04.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/portrait-05.jpg')"></div>
+          </div>
+          <div class="pcard-dots"></div>
+          <div class="pcard-label">
+            <span class="pcard-title">Portrait</span>
+            <span class="pcard-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- CARD 3: Couple — links to service-couple.html -->
+        <a class="portfolio-card fade-up" href="service-couple.html">
+          <div class="pcard-slideshow">
+            <!-- Replace with your 5 couple photos -->
+            <div class="pslide active" style="background-image: url('images/42100023.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/couple-02.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/couple-03.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/couple-04.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/couple-05.jpg')"></div>
+          </div>
+          <div class="pcard-dots"></div>
+          <div class="pcard-label">
+            <span class="pcard-title">Couple</span>
+            <span class="pcard-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- CARD 4: Family — links to service-family.html -->
+        <a class="portfolio-card fade-up" href="service-family.html">
+          <div class="pcard-slideshow">
+            <!-- Replace with your 5 family photos -->
+            <div class="pslide active" style="background-image: url('images/19680035.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/family-02.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/family-03.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/family-04.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/family-05.jpg')"></div>
+          </div>
+          <div class="pcard-dots"></div>
+          <div class="pcard-label">
+            <span class="pcard-title">Family</span>
+            <span class="pcard-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- CARD 5: Commercial — links to service-commercial.html -->
+        <a class="portfolio-card fade-up" href="service-commercial.html">
+          <div class="pcard-slideshow">
+            <!-- Replace with your 5 commercial photos -->
+            <div class="pslide active" style="background-image: url('images/DSC2421.JPG')"></div>
+            <div class="pslide" style="background-image: url('images/commercial-02.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/commercial-03.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/commercial-04.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/commercial-05.jpg')"></div>
+          </div>
+          <div class="pcard-dots"></div>
+          <div class="pcard-label">
+            <span class="pcard-title">Commercial</span>
+            <span class="pcard-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- CARD 6: Artwork — links to service-artwork.html -->
+        <a class="portfolio-card fade-up" href="service-artwork.html">
+          <div class="pcard-slideshow">
+            <!-- Replace with your 5 artwork / painted photo images -->
+            <div class="pslide active" style="background-image: url('images/DSC_1576-2-2-min.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC4499-min.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC_1596-2-2-min.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC_1572-2-2-min.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/artwork-05.jpg')"></div>
+          </div>
+          <div class="pcard-dots"></div>
+          <div class="pcard-label">
+            <span class="pcard-title">Artwork</span>
+            <span class="pcard-arrow">→</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════
+         ARTIST STATEMENT
+    ══════════════════════════ -->
+    <section class="quote-band fade-up">
+      <!-- Replace with a moody atmospheric photo -->
+      <img class="quote-band-bg" src="images/28070008.jpg" alt="" aria-hidden="true" />
+      <p class="quote-text">
+        „Die Fotografie ist für mich die Kunst,<br>
+        meinem Eindruck von der Welt einen Ausdruck zu geben."
+      </p>
+    </section>
+
+    <!-- ══════════════════════════
+         ABOUT ME
+    ══════════════════════════ -->
+    <section id="about" class="about-layout">
+
+      <div class="about-image-col">
+        <!--
+          Replace with a personal portrait photo of Elisabeth.
+          Example: src="images/elisabeth.jpg"
+        -->
+        <img src="images/elisabeth.jpg" alt="Elisabeth Novy" />
+      </div>
+
+      <div class="about-text-col fade-up">
+        <h2 class="about-name">Elisabeth<br>Novy</h2>
+        <!-- PLACEHOLDER: short subtitle -->
+        <p class="about-tagline">Fotografin &amp; Künstlerin · Wien</p>
+        <div class="about-divider"></div>
+        <!-- PLACEHOLDER: personal intro paragraph -->
+        <p class="about-body">
+          Hier steht dein persönlicher Text. Was treibt dich an?
+          Was macht deine Arbeit besonders? Schreib so, wie du sprichst – authentisch und direkt.
+        </p>
+        <!-- PLACEHOLDER: background / artistic philosophy -->
+        <p class="about-body">
+          Zweiter Absatz: Dein Hintergrund, deine Ausbildung, deine Einflüsse.
+          Was hat dich zur Fotografie – und zur Malerei – geführt?
+        </p>
+        <div class="about-divider"></div>
+        <!-- Replace # with your actual social links -->
+        <div style="display:flex; gap:24px;">
+          <a href="#" style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#8b7355;text-decoration:none;">Instagram</a>
+          <a href="#" style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#8b7355;text-decoration:none;">LinkedIn</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ══════════════════════════
+         CONTACT
+    ══════════════════════════ -->
+    <section class="contact-section" id="contact">
+
+      <div class="fade-up">
+        <h2 class="contact-title">Kontakt</h2>
+        <!-- PLACEHOLDER: short invitation text -->
+        <p style="font-size:14px;color:#555;max-width:380px;line-height:1.9;margin-bottom:32px;">
+          Du hast eine Idee, ein Projekt, oder möchtest einfach mehr erfahren?
+          Ich freue mich auf deine Nachricht.
+        </p>
+        <div class="contact-info">
+          <span class="contact-label">E-Mail</span>
+          <!-- Replace with real email -->
+          <a href="mailto:hello@elisabethnovy.com">hello@elisabethnovy.com</a>
+          <span class="contact-label">Standort</span>
+          Wien, Österreich
+          <span class="contact-label">Instagram</span>
+          <!-- Replace with real Instagram -->
+          <a href="https://instagram.com/YOURHANDLE" target="_blank">@yourhandle</a>
+        </div>
+      </div>
+
+      <div class="fade-up" style="overflow:hidden;">
+        <!-- Replace with any photo you'd like next to the contact info -->
+        <img src="images/contact-img.jpg" alt=""
+          style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center;display:block;" />
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <p class="footer-logo">Elisabeth Novy</p>
+      <p class="footer-sub">Photography &amp; Art · Vienna, Austria</p>
+    </div>
+    <ul class="footer-nav">
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+    <div class="footer-bottom">
+      <span><!-- hello@elisabethnovy.com --></span>
+      <span>© 2025 Elisabeth Novy</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    // Scroll fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Hero slideshow
+    (function () {
+      const slides = document.querySelectorAll('#hero-show .slide');
+      const dots = document.querySelectorAll('#hero-dots .dot');
+      let cur = 0;
+      dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
+      function goTo(n) {
+        slides[cur].classList.remove('active'); dots[cur].classList.remove('active');
+        cur = (n + slides.length) % slides.length;
+        slides[cur].classList.add('active'); dots[cur].classList.add('active');
+      }
+      setInterval(() => goTo(cur + 1), 5000);
+    })();
+
+    // Portfolio card slideshows
+    document.querySelectorAll('.portfolio-card').forEach((card, idx) => {
+      const slides = card.querySelectorAll('.pslide');
+      const wrap = card.querySelector('.pcard-dots');
+      let cur = 0;
+      slides.forEach((_, i) => {
+        const d = document.createElement('button');
+        d.className = 'pdot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', `Bild ${i + 1}`);
+        d.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); goTo(i); });
+        wrap.appendChild(d);
+      });
+      function goTo(n) {
+        const dots = wrap.querySelectorAll('.pdot');
+        slides[cur].classList.remove('active'); dots[cur].classList.remove('active');
+        cur = (n + slides.length) % slides.length;
+        slides[cur].classList.add('active'); dots[cur].classList.add('active');
+      }
+      setInterval(() => goTo(cur + 1), 3500 + idx * 350);
+    });
+
+    // Smooth scroll with nav offset
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
+          document.getElementById('navLinks').classList.remove('open');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
